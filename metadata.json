@@ -1,0 +1,8 @@
+{
+  "name": "MediaPipe Vision Studio",
+  "description": "A high-end interactive demonstration of Google MediaPipe Studio featuring real-time face and hand landmark detection with gesture recognition.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}
