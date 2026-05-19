@@ -48,7 +48,7 @@ function AvatarScene({ headRef, lipSyncRef }: AvatarSceneProps) {
 
   const gltf = useLoader(
     GLTFLoader,
-    '/avatar/avatar.vrm',
+    '/public/avatar.vrm',
     (loader: any) => {
       loader.register((parser: any) => {
         return new VRMLoaderPlugin(parser);
