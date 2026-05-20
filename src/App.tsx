@@ -48,7 +48,7 @@ function AvatarScene({ headRef, lipSyncRef }: AvatarSceneProps) {
 
   const gltf = useLoader(
     GLTFLoader,
-    '/final/Eugenia.vrm',
+    '/Eugenia.vrm',
     (loader: any) => {
       loader.register((parser: any) => {
         return new VRMLoaderPlugin(parser);
