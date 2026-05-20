@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        working-directory: ./metahuman-ai
+        working-directory: ./metahuma-ai
         env:
           VITE_GROQ_API_KEY: ${{ secrets.VITE_GROQ_API_KEY }}
           VITE_ELEVENLABS_API_KEY: ${{ secrets.VITE_ELEVENLABS_API_KEY }}
