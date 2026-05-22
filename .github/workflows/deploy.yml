@@ -27,14 +27,14 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: metahuman-ai/package-lock.json
+          cache-dependency-path: metahuma-ai/package-lock.json
 
       - name: Install dependencies
-        working-directory: ./metahuman-ai
+        working-directory: ./metahuma-ai
         run: npm ci
 
       - name: Build
-        working-directory: ./metahuman-ai
+        working-directory: ./metahuma-ai
         env:
           VITE_GROQ_API_KEY: ${{ secrets.VITE_GROQ_API_KEY }}
           VITE_ELEVENLABS_API_KEY: ${{ secrets.VITE_ELEVENLABS_API_KEY }}
@@ -47,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './metahuman-ai/dist'
+          path: './metahuma-ai/dist'
 
   deploy:
     environment:
